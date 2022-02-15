@@ -23,7 +23,7 @@ async function main() {
   const authClient = await authorize();
   const request = await {
     spreadsheetId: process.env.NEXT_PUBLIC_SHEET_ID,
-    range: "Sheet1!A2:AX",
+    range: "Sheet1!A2:AV",
     valueRenderOption: "FORMATTED_VALUE",
     dateTimeRenderOption: "FORMATTED_STRING",
     auth: authClient,
@@ -55,45 +55,45 @@ async function main() {
       item.founderNames = company[14] || null;
       item.headquartersCountry = company[15] || null;
       item.headquartersCity = company[16] || null;
-      item.diversitySpotlightUs = company[17] || null
-      item.womanInManagement = company[18] || null;
-      item.nonWhitePeopleInManagement = company[19] || null;
-      item.diversityScore=company[20] || null;
-      item.headcount = company[21] || null;
-      item.numberOfPositionsVacantInQ12022 = company[22] || null;
-      item.numberOfPositionsVacantInPastYear = company[23] || null;
-      item.estimatedRevenueRange=company[24] || null
-      item.pricingModel = company[25] || null;
-      item.pricingPage = company[26] || null;
-      item.knownIndustriesWorkingIn = company[27] || null;
-      item.numbersOfCustomers = company[28] || null; 
-      item.namesOfActualCustomersAsPerWebsite = company[29] || null
-      item.pageAboutBanking = company[30] || null;
-      item.pageAboutHealth = company[31] || null;
-      item.pageAboutSustainability = company[32] || null;
-      item.pageAboutGovernment = company[33] || null;
-      item.totalNumberOfNewProducFeaturesInLastYear = company[34] || null;
-      item.totalProducts = company[35] || null;
-      item.patentsGranted = company[36] || null;
-      item.acquisitions = company[37] || null;
-      item.knownStandardsUsedIntoPlatform = company[38] || null;
-      item.knownPartnershipsApi = company[39] || null;
-      item.monthlyWebsiteVisits = company[40] || null;
-      item.monthlyWebsiteVisitsGrowth = company[41] || null;
-      item.itSpend = company[42] || null;
-      item.activeTechCount = company[43] || null;
-      item.stage = company[38] || null;
-      item.totalFunding = company[40] || null;
-      item.lastFundingDate = company[41] || null;
-      item.top5Investors = company[42] || null;
-      item.numberLeadOfLeadInvestors = company[43] || null;
-      item.numberOfInvestors = company[44] || null;
-      item.acquiredBy = company[45] || null;
-      item.acquisitionPrice = company[46] || null;
-      item.ipoDate = company[47] || null;
-      item.moneyRaisedAtIpo = company[48] || null;
-      item.valuationAtIpo = company[49] || null;
-      item.contactEmail = company[50] || null;
+   /*    item.diversitySpotlightUs = company[17] || null */
+      item.womanInManagement = company[17] || null;
+      item.nonWhitePeopleInManagement = company[18] || null;
+      /* item.diversityScore=company[19] || null; */
+      item.headcount = company[19] || null;
+      item.numberOfPositionsVacantInQ12022 = company[20] || null;
+     /*  item.numberOfPositionsVacantInPastYear = company[23] || null; */
+      item.estimatedRevenueRange=company[21] || null
+      item.pricingModel = company[22] || null;
+      item.pricingPage = company[23] || null;
+      item.knownIndustriesWorkingIn = company[24] || null;
+      item.numbersOfCustomers = company[25] || null; 
+      item.namesOfActualCustomersAsPerWebsite = company[26] || null
+      item.pageAboutBanking = company[27] || null;
+      item.pageAboutHealth = company[28] || null;
+      item.pageAboutSustainability = company[29] || null;
+      item.pageAboutGovernment = company[30] || null;
+/*       item.totalNumberOfNewProducFeaturesInLastYear = company[34] || null; */
+      /* item.totalProducts = company[35] || null; */
+      item.patentsGranted = company[31] || null;
+      item.acquisitions = company[32] || null;
+/*       item.knownStandardsUsedIntoPlatform = company[38] || null; */
+      item.knownPartnershipsApi = company[33] || null;
+ /*      item.monthlyWebsiteVisits = company[40] || null;
+      item.monthlyWebsiteVisitsGrowth = company[41] || null; */
+      item.itSpend = company[34] || null;
+      item.activeTechCount = company[35] || null;
+      item.stage = company[36] || null;
+      item.totalFunding = company[37] || null;
+      item.lastFundingDate = company[38] || null;
+      item.top5Investors = company[39] || null;
+      item.numberLeadOfLeadInvestors = company[40] || null;
+      item.numberOfInvestors = company[41] || null;
+      item.acquiredBy = company[42] || null;
+      item.acquisitionPrice = company[43] || null;
+      item.ipoDate = company[44] || null;
+      item.moneyRaisedAtIpo = company[45] || null;
+      item.valuationAtIpo = company[46] || null;
+      item.contactEmail = company[47] || null;
       indexValues.values.push(item);
     });
   } catch (err) {
@@ -107,7 +107,7 @@ async function getCompanies() {
   const authClient = await authorize();
   const request = await {
     spreadsheetId: process.env.NEXT_PUBLIC_SHEET_ID,
-    range: "Sheet1!A2:BD",
+    range: "Sheet1!A2:AV",
     valueRenderOption: "FORMATTED_VALUE",
     dateTimeRenderOption: "FORMATTED_STRING",
     auth: authClient,
@@ -139,45 +139,45 @@ async function getCompanies() {
       item.founderNames = company[14] || null;
       item.headquartersCountry = company[15] || null;
       item.headquartersCity = company[16] || null;
-      item.diversitySpotlightUs = company[17] || null
-      item.womanInManagement = company[18] || null;
-      item.nonWhitePeopleInManagement = company[19] || null;
-      item.diversityScore=company[20] || null;
-      item.headcount = company[21] || null;
-      item.numberOfPositionsVacantInQ12022 = company[22] || null;
-      item.numberOfPositionsVacantInPastYear = company[23] || null;
-      item.estimatedRevenueRange=company[24] || null
-      item.pricingModel = company[25] || null;
-      item.pricingPage = company[26] || null;
-      item.knownIndustriesWorkingIn = company[27] || null;
-      item.numbersOfCustomers = company[28] || null; 
-      item.namesOfActualCustomersAsPerWebsite = company[29] || null
-      item.pageAboutBanking = company[30] || null;
-      item.pageAboutHealth = company[31] || null;
-      item.pageAboutSustainability = company[32] || null;
-      item.pageAboutGovernment = company[33] || null;
-      item.totalNumberOfNewProducFeaturesInLastYear = company[34] || null;
-      item.totalProducts = company[35] || null;
-      item.patentsGranted = company[36] || null;
-      item.acquisitions = company[37] || null;
-      item.knownStandardsUsedIntoPlatform = company[38] || null;
-      item.knownPartnershipsApi = company[39] || null;
-      item.monthlyWebsiteVisits = company[40] || null;
-      item.monthlyWebsiteVisitsGrowth = company[41] || null;
-      item.itSpend = company[42] || null;
-      item.activeTechCount = company[43] || null;
-      item.stage = company[38] || null;
-      item.totalFunding = company[40] || null;
-      item.lastFundingDate = company[41] || null;
-      item.top5Investors = company[42] || null;
-      item.numberLeadOfLeadInvestors = company[43] || null;
-      item.numberOfInvestors = company[44] || null;
-      item.acquiredBy = company[45] || null;
-      item.acquisitionPrice = company[46] || null;
-      item.ipoDate = company[47] || null;
-      item.moneyRaisedAtIpo = company[48] || null;
-      item.valuationAtIpo = company[49] || null;
-      item.contactEmail = company[50] || null;
+   /*    item.diversitySpotlightUs = company[17] || null */
+      item.womanInManagement = company[17] || null;
+      item.nonWhitePeopleInManagement = company[18] || null;
+      /* item.diversityScore=company[19] || null; */
+      item.headcount = company[19] || null;
+      item.numberOfPositionsVacantInQ12022 = company[20] || null;
+     /*  item.numberOfPositionsVacantInPastYear = company[23] || null; */
+      item.estimatedRevenueRange=company[21] || null
+      item.pricingModel = company[22] || null;
+      item.pricingPage = company[23] || null;
+      item.knownIndustriesWorkingIn = company[24] || null;
+      item.numbersOfCustomers = company[25] || null; 
+      item.namesOfActualCustomersAsPerWebsite = company[26] || null
+      item.pageAboutBanking = company[27] || null;
+      item.pageAboutHealth = company[28] || null;
+      item.pageAboutSustainability = company[29] || null;
+      item.pageAboutGovernment = company[30] || null;
+/*       item.totalNumberOfNewProducFeaturesInLastYear = company[34] || null; */
+      /* item.totalProducts = company[35] || null; */
+      item.patentsGranted = company[31] || null;
+      item.acquisitions = company[32] || null;
+/*       item.knownStandardsUsedIntoPlatform = company[38] || null; */
+      item.knownPartnershipsApi = company[33] || null;
+ /*      item.monthlyWebsiteVisits = company[40] || null;
+      item.monthlyWebsiteVisitsGrowth = company[41] || null; */
+      item.itSpend = company[34] || null;
+      item.activeTechCount = company[35] || null;
+      item.stage = company[36] || null;
+      item.totalFunding = company[37] || null;
+      item.lastFundingDate = company[38] || null;
+      item.top5Investors = company[39] || null;
+      item.numberLeadOfLeadInvestors = company[40] || null;
+      item.numberOfInvestors = company[41] || null;
+      item.acquiredBy = company[42] || null;
+      item.acquisitionPrice = company[43] || null;
+      item.ipoDate = company[44] || null;
+      item.moneyRaisedAtIpo = company[45] || null;
+      item.valuationAtIpo = company[46] || null;
+      item.contactEmail = company[47] || null;
 
       companiesValues.values.push(item);
     });
